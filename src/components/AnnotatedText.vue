@@ -9,7 +9,8 @@
       :style="getSpanStyle(span)"
       v-bind="spanAttributes"
       v-on="preppedSpanEvents"
-    >{{ span.text }}</span>
+      v-html="span.text"
+    ></span>
   </span>
 </template>
 
